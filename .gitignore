@@ -30,3 +30,5 @@ test/
 hs_err_pid*
 
 #Temporal hidden files
+/CompilerHAL9k-68k.iml
+/target/
