@@ -5,13 +5,13 @@ public class MemorySection {
 
     /**
      * Main class constructor used to create new {@link MemorySection}
-     * instances. This sections will be a 8b fixed bin.
+     * instances. This section will be a 8b fixed bin.
      *
      * @throws IllegalArgumentException If the address length is higher to 8b
      * @param addr address to parse
      */
     public MemorySection(String addr) {
-        final int hex = Integer.parseInt(addr, 16);
+        final int hex = Integer.parseInt(addr, 10);
         StringBuilder bits = new StringBuilder(Integer.toBinaryString(hex));
 
         if (bits.length() > 8) throw new IllegalArgumentException("Memory address must be a 8b address");
